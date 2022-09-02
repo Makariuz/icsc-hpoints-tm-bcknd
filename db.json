@@ -1,0 +1,97 @@
+{
+    "houseID": [
+        {
+            "House": "Olive Branches",
+            "Students": [
+                "Ana Luísa Silva",
+                "Sofia Cernautan",
+                "Daliyah Draper",
+                "Maria Clara Silva",
+                "João Pedro Silva",
+                "Isadora Raposo",
+                "Daric Tadesse",
+                "Ye-jun Kwon",
+                "Bernardo Raposo",
+                "Elad Tadesse",
+                "Isaura Pinto",
+                "Samuel Choi",
+                "Hadassa Moreira",
+                "Alexandra Krevsun (Sasha)",
+                "Masaune Kohji",
+                "Rebeca Moreira",
+                "Esteban Barthelemy"
+            ],
+            "Points": 0
+        },
+        {
+            "House": "Water Walkers",
+            "Students": [
+                "Mila Komisarchuk",
+                "Maria Fernanda Marques",
+                "Maia Lukianenko",
+                "Klara Bergman",
+                "Ariana Styliaras",
+                "Ivan Khrypchenko",
+                "Pavlo Komisarchuk",
+                "Alexandre Marques",
+                "Diasmin Finda",
+                "Noelle Bergman",
+                "Oleksandr Komisarchuk (Sasha)",
+                "Selena Kadous",
+                "Arthur Marques",
+                "Daniella Kushner",
+                "Yuetong Wang (Trystyn)",
+                "Oleksandra Melnky (Sasha)",
+                "Yardan Kadous"
+            ],
+            "Points": 0
+        },
+        {
+            "House": "Fishers of Man",
+            "Students": [
+                "Sam Zhuravlev",
+                "Polina Palona",
+                "Emma Prus",
+                "Yebon Kim",
+                "Li Chun",
+                "Zukhar Lukianenho",
+                "Teodor Zhuravlev",
+                "Sofia Costa",
+                "Orestas Valatkevicius",
+                "Yebyeol Kim",
+                "Li Wai (Violet)",
+                "Kallipeni Filou",
+                "Silvia Manuel",
+                "Mark Zhuravlev",
+                "Themistoklis Filos",
+                "Pedro Pedrosa",
+                "Giovanna Pedrosa",
+                "Eduardo Kaputu"
+            ],
+            "Points": 0
+        },
+        {
+            "House": "Lights of the hill",
+            "Students": [
+                "Benjamin Oliveira",
+                "Joshua Oliveira",
+                "Benjamim Guerra",
+                "Danylo Nesmiian",
+                "Kenva Pina",
+                "Nellija Petrunho",
+                "Theo Coelho",
+                "Lisa Messias",
+                "Michael Amaro",
+                "Azevedo Francisco",
+                "Alyssa Martinusso",
+                "Ruben Gaspar",
+                "Laura Messias",
+                "Daniel Pina",
+                "Gabriel Pina",
+                "Xassia Francisco",
+                "Harvey Kushner"
+            ],
+            "Points": 0
+        }
+    ]
+}
