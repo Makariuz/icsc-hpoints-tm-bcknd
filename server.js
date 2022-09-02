@@ -16,8 +16,7 @@ mongoose.connect(process.env.MONGO_URL).then(() => {
 
 
 app.get('/', (req,res) => {
-    res.status(200).json('Choose a Route')
-    console.log('Choose a valid route')
+    res.status(200).json('Choose a Route or Visit main website')
 })
 /* const studentRoute = require('./routes/students.routes')
 app.use('/student', studentRoute) */
