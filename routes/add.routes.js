@@ -53,7 +53,20 @@ router.put("/add-points/:id", async (req, res) => {
     { $inc: { points: newPoints } },
     { new: true }
   );
+  
+  res.json(updatePoints);
+});
 
+
+router.put("/remove-points/:id", async (req, res) => {
+  let { newPoints } = req.body;
+
+  let updatePoints = await Add.findByIdAndUpdate(
+    req.params.id,
+    { $inc: { points: -newPoints } },
+    { new: true }
+  );
+  
   res.json(updatePoints);
 });
 
