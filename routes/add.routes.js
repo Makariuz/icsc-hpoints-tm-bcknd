@@ -33,11 +33,10 @@ router.get("/lights", async (req, res) => {
   res.json(filteredHouse);
 });
 
-router.post("/add", async (req, res) => {
+router.put("/add", async (req, res) => {
   const newUser = new Add({
     name: req.body.name,
     house: req.body.house,
-    points: req.body.points,
   });
 
   //save user and send response
