@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 
 router.get("/", async (req, res) => {
   const std = await Add.find();
-  res.json(std);
+  res.json(std); //erase this comment
 });
 
 router.get("/olive", async (req, res) => {
