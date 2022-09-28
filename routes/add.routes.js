@@ -7,6 +7,16 @@ router.get("/", async (req, res) => {
   res.json(std); //erase this comment
 });
 
+router.get("/search", async (req,res) => {
+  const qq = await Add.find({}).toArray(function (err, result) {
+    if (err){
+      res.status(400).send('error')
+    } else {
+      res.json(result)
+    }
+  })
+})
+
 router.get("/olive", async (req, res) => {
   const oliveHouse = await Add.find();
   let filteredHouse = oliveHouse.filter((o) => o.house === "Olive Branches");
@@ -17,6 +27,14 @@ router.get("/water", async (req, res) => {
   const waterHouse = await Add.find();
   let filteredHouse = waterHouse.filter((o) => o.house === "Water Walkers");
   res.json(filteredHouse);
+});
+
+router.get("/student/:id", async (req, res) => {
+  const studentId = await Add.findById(req.params.id);
+
+  studentId !== null
+    ? res.status(200).json(studentId)
+    : res.status(200).json("not found");
 });
 
 router.get("/fish", async (req, res) => {
@@ -34,9 +52,12 @@ router.get("/lights", async (req, res) => {
 });
 
 router.put("/add", async (req, res) => {
+
+
+  let {name, house} = req.body
   const newUser = new Add({
-    name: req.body.name,
-    house: req.body.house,
+    name,
+    house,
   });
 
   //save user and send response
