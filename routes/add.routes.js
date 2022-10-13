@@ -18,9 +18,16 @@ router.get("/search", async (req,res) => {
 })
 
 router.get("/olive", async (req, res) => {
-  const oliveHouse = await Add.find();
+  try {
+
+    const oliveHouse = await Add.find();
   let filteredHouse = oliveHouse.filter((o) => o.house === "Olive Branches");
+
   res.json(filteredHouse);
+  } catch (err) {
+    console.log('not')
+  }
+  
 });
 
 router.get("/water", async (req, res) => {
@@ -37,7 +44,7 @@ router.get("/student/:id", async (req, res) => {
     : res.status(200).json("not found");
 });
 
-router.get("/fish", async (req, res) => {
+router.get("/fishers", async (req, res) => {
   const fishHouse = await Add.find();
   let filteredHouse = fishHouse.filter((o) => o.house === "Fishers of Man");
   res.json(filteredHouse);
@@ -79,11 +86,11 @@ router.put("/add-points/:id", async (req, res) => {
 
 
 router.put("/remove-points/:id", async (req, res) => {
-  let { newPoints } = req.body;
+  let { lessPoints } = req.body;
 
   let updatePoints = await Add.findByIdAndUpdate(
     req.params.id,
-    { $inc: { points: -newPoints } },
+    { $inc: { points: -lessPoints } },
     { new: true }
   );
   
