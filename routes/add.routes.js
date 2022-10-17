@@ -30,6 +30,19 @@ router.get("/olive", async (req, res) => {
   
 });
 
+router.get("/testHouse", async (req, res) => {
+  try {
+
+    const testHouse = await Add.find();
+  let filteredHouse = testHouse.filter((o) => o.house === "testHouse");
+
+  res.json(filteredHouse);
+  } catch (err) {
+    console.log('not')
+  }
+  
+});
+
 router.get("/water", async (req, res) => {
   const waterHouse = await Add.find();
   let filteredHouse = waterHouse.filter((o) => o.house === "Water Walkers");
